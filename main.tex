@@ -4,8 +4,32 @@
 
 %%%%%%%%%%%%% Geometry
 \usepackage[a4paper,left=2.5cm,right=2.5cm, bottom=2.5cm,top=2.5cm]{geometry}
+\usepackage{fontspec}
+%%%%%%%%%%%%%%% Insert Code
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{color}
 
-%%%%%%%%%%%%%%% Les paquets
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mygray2}{rgb}{0.58,0.5,0.82}
+
+\lstset{ %
+backgroundcolor=\color{white},   % choose the background color
+basicstyle=\footnotesize\ttfamily,     % size of fonts used for the code
+columns=fullflexible,
+breaklines=true,                 % automatic line breaking only at whitespace
+captionpos=b,                    % sets the caption-position to bottom
+tabsize=4,
+commentstyle=\color{mygreen},    % comment style
+escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+keywordstyle=\color{blue},       % keyword style
+stringstyle=\color{mygray2}\ttfamily,     % string literal style
+frame=single,
+rulesepcolor=\color{red!20!green!20!blue!20},
+% identifierstyle=\color{red},
+language=c++,
+}
 
 \usepackage[english]{babel}
 \usepackage[palette=munch]{nexus}
@@ -26,16 +50,22 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \chapter{现代C++}
-\section{多线程编程}
-\lipsum[1-2]
+\include{1_1_ModernC++Lang}
 
-\section{算法}
+\section{多线程编程}
 \lipsum[1-2]
 
 \section{深度学习框架}
 \lipsum[1-2]
 
 %%%%%%%%%%%%%%%%%%%%%%%
+\chapter{算法与数据结构}
+\section{数据结构}
+
+\section{Leetcode中的算法}
+
+\section{高级话题中的算法}
+
 
 \chapter{分布式计算与存储}
 \section{kubernetes容器集群}
@@ -46,12 +76,14 @@
 
 \section{KV Store}
 \lipsum[1-2]
+\subsection{Leveldb}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 
-
 \chapter{前端}
-\section{Stateless}
+\section{脚手架与工具链}
+\lipsum[1-3]
+\section{Stateless模块化编程范式}
 \lipsum[1-3]
 
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -63,8 +95,50 @@
 \section{传统方法}
 \lipsum[1-1]
 
+%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Java以及它的生态}
+\section{Java8/9/10新特性}
+\lipsum[1-2]
+\section{Spring WebFlux}
+\lipsum[1-2]
+\section{Spring-boot}
+\lipsum[1-2]
 
-%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Python后端开发}
+\section{语法与语法糖}
+\lipsum[1-2]
+\section{Flask}
+\lipsum[1-2]
+\section{Tornado}
+\lipsum[1-2]
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{工程经验}
+\section{BloodMiser}
+\lipsum[1-3]
+\section{军用智能计算}
+\lipsum[1-3]
+\section{Stateless}
+\lipsum[1-3]
+\section{Do-Not-Yarn}
+\lipsum[1-3]
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{社会经验}
+\section{职场}
+\lipsum[1-3]
+\section{生活}
+\lipsum[1-3]
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{地缘政治}
+\section{中美武器装备}
+\lipsum[1-3]
+\section{美国国内政治}
+\lipsum[1-3]
+\section{周边国家与台湾}
+\lipsum[1-3]
 
 \end{document}
 
